@@ -1,0 +1,19 @@
+name: Desafio 1 - CI
+
+defaults:
+  run:
+    working-directory: ./desafio-1
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: You shall ~~not~~ pass
+        run: npm run you-shall-pass
