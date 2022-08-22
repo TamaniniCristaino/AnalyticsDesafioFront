@@ -13,10 +13,11 @@ API para buscar os dados: https://covid19api.com/
 		- Pode utilizar a API "https://countryflagsapi.com"	
 	- Criar paginação (diferencial)
 	- Criar um campo que filtra a tabela pelo nome/sigla do país (diferencial)
-	- Cada linha da tabela deve ter um checkbox (uma coluna dedicada para o checkbox) que permite selecionar a linha
-		
+	- Cada linha da tabela deve ter um checkbox (uma coluna dedicada para o checkbox) que permite selecionar a linha		
 - Fora da tabela, criar um botão "Visualizar/comparar"	
 	- Ao clicar no botão, um redirecionamento para a tela de dados deve ocorrer
+- A seguir um exemplo de como a tela pode ser estruturada:
+![image](https://user-images.githubusercontent.com/47633508/185994034-1f9da64d-ecb8-4029-ba55-778d537f36da.png)
 	
 ## Tela de Dados
 - Criar uma listagem que mostra os países selecionados e seus dados (nome, bandeira, sigla...)
@@ -27,6 +28,8 @@ API para buscar os dados: https://covid19api.com/
 	A informação de cada país deve estar representado em uma série nesse gráfico 
 		- Exemplo: Em um gráfico de linhas, cada linha (série) representará os dados de um país
 - Criar um Card com o gráfico comparando os números totais de mortes (TotalDeaths) de cada país
+- A seguir um exemplo de como a tela pode ser estruturada:
+![image](https://user-images.githubusercontent.com/47633508/185993816-1e8987b6-c7bb-440f-9893-b88489f5994f.png)
 
 ## Tela de Detalhamento do País
 - Endpoint: https://api.covid19api.com/total/country/COUNTRY_CODE?from=2022-01-01T00:00:00Z&to=2022-12-31T23:59:59Z
