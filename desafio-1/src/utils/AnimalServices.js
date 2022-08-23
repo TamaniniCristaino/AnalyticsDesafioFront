@@ -1,8 +1,16 @@
-class AnimalServices {
-	static API_URL = 'https://zoo-animal-api.herokuapp.com/animals/rand/10';
+import axios from 'axios';
+import { toast } from 'react-toastify';
 
-	static async getAnimals() {
-		return fetch(this.API_URL).then(res => res.json());
+async function AnimalServices() {
+	const API_URL = 'https://zoo-animal-api.herokuapp.com/animals/rand/10';
+
+	const resp = await axios.get(API_URL);
+
+	if(resp.status !== 200) {
+		toast.error('Erro inesperado!');
+		return [];
+	} else {
+		return resp.data;
 	}
 }
 

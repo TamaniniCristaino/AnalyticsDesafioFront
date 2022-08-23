@@ -2,7 +2,7 @@ import React from 'react';
 import { afterAll, afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
 import { cleanup, render, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import App from 'src/App';
+import App from 'src/App2';
 import AnimalServices from 'src/utils/AnimalServices';
 
 describe('Integration tests', () => {

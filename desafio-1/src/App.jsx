@@ -5,10 +5,10 @@ import AnimalServices from 'src/utils/AnimalServices';
 function App() {
 	const [list, setList] = useState([]);
 	const [filteredList, setFilteredList] = useState([]);
-	const [search, setSearch] = useState("");
+	const [search, setSearch] = useState('');
 	const [favorites, setFavorites] = useState([]);
 
-	const handleFavorite = (item) => {
+	const handleFavorite = item => {
 		const newFavorites = [...favorites, item];
 
 		setFavorites(newFavorites);
@@ -51,7 +51,7 @@ function App() {
 
 									return (
 										<tr data-testid={'row-data'}>
-											<td>{item.name}</td>
+											<td>{ item.name }</td>
 											<td>
 												<a
 													style={{ textDecoration: 'none', color: 'inherit' }}
@@ -73,7 +73,7 @@ function App() {
 
 									return (
 										<tr data-testid={'row-data'}>
-											<td>{item.name}</td>
+											<td>{ item.name }</td>
 											<td>
 												<a
 													style={{ textDecoration: 'none', color: 'inherit' }}
