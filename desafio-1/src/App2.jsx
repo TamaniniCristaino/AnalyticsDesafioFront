@@ -1,5 +1,10 @@
-import AnimalPlanet from "./pages/AnimalPlanet";
+import React from 'react';
+import AnimalPlanet from './pages/AnimalPlanet';
 
 export default function App() {
-	return <AnimalPlanet />;
+	return (
+		<React.Fragment>
+			<AnimalPlanet />
+		</React.Fragment>
+	);
 }
